@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+
+<body>
+
+
+    <div class="box">
+
+        <div class="calculator">
+
+            <div class="calc-header">
+                <div class="case"> </div>
+            </div>
+
+            <div class="calc-display">
+                <input id="ans" class="display" type="text" maxlength="6">
+            </div>
+
+            <div class="calc-body">
+                <p>
+                    <button class="btn-pri" onclick="fnSquare()">x<sup>3</sup></button>
+                    <button class="btn-pri" onclick="deleteNumber()">Del</button>
+                    <button class="btn-pri" onclick="clearNumber()">C</button>
+                </p>
+                <p>
+                    <button class="btn-pri" onclick="fnSin()">sin</button>
+                    <button class="btn-pri" onclick="fnCos()">cos</button>
+                    <button class="btn-pri" onclick="fnTan()">tan</button>
+                    <button class="btn-pri" onclick="fnLog()">log</button>
+                </p>
+                <p>
+                    <button class="btn-pri" onclick="fnSqrt()"><sup>2</sup>√x</button>
+                    <button class="btn-pri" onclick="fnSqr()">x<sup>2</sup></button>
+                    <button class="btn-pri" onclick="getNumber('(')">(</button>
+                    <button class="btn-pri" onclick="getNumber(')')">)</button>
+                </p>
+                <p>
+                    <button class="btn-pri" onclick="getNumber('7')">7</button>
+                    <button class="btn-pri" onclick="getNumber('8')">8</button>
+                    <button class="btn-pri" onclick="getNumber('9')">9</button>
+                    <button class="btn-pri" onclick="getNumber('/')">/</button>
+                </p>
+                <p>
+                    <button class="btn-pri" onclick="getNumber('4')">4</button>
+                    <button class="btn-pri" onclick="getNumber('5')">5</button>
+                    <button class="btn-pri" onclick="getNumber('6')">6</button>
+                    <button class="btn-pri" onclick="getNumber('*')">* </button>
+                </p>
+                <p>
+                    <button class="btn-pri" onclick="getNumber('1')">1</button>
+                    <button class="btn-pri" onclick="getNumber('2')">2</button>
+                    <button class="btn-pri" onclick="getNumber('3')">3</button>
+                    <button class="btn-pri" onclick="getNumber('-')">-</button>
+                </p>
+                <p>
+                    <button class="btn-pri" onclick="getNumber('.')">.</button>
+                    <button class="btn-pri" onclick="getNumber('0')">0</button>
+                    <button class="btn-pri" onclick="total()">=</button>
+                    <button class="btn-pri" onclick="getNumber('+')">+</button>
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+</body>
+<script src="app.js"></script>
+
+</html>
